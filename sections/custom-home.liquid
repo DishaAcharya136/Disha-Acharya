@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="{{ 'index.css' | asset_url }}">
+<script src="{{ 'index.js' | asset_url }}"></script>
+
+<div class="custom-home-section">
+<!-- First Frame -->
+    <div id="first-frame">
+
+      <!-- Nav bar -->
+      <div class="nav-bar">
+          <div class="mobile-menu-icons">
+              <div id="hamburger" class="hamburger" onclick="hamburgerMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+
+        <h3 class="logo">TISSO VISON</h3>
+        <p class="find-gift-text">Find the ideal gift for your loved ones.</p>
+        <button class="choose-gift-btn">Choose Gift  <i class="fas fa-arrow-right"></i></button>
+        
+      </div>
+
+      <div>
+
+        <!-- Mobile Hidden menu -->
+        <div id="mobile-menu-contents" class="mobile-menu">
+          <p class="get-started-text">Find the ideal gift for your loved ones.</p>       <!-- Get started with your "Mi Solo" kit -->
+          <button class="choose-gift-btn">Choose Gift  <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <!-- First Image -->
+        <div class="first-banner"></div>
+
+        <!-- Second Image with text -->
+        <div class="second-banner-section">
+          <div class="second-banner-section-content">
+              <h1 class="gift-guide">The Gift Guide</h1>
+              <h1 class="gift-guide-mobile">The Gift Guide</h1>
+              <div class="paragraph">
+              <p class="para-1">Discover Joy: Your Ultimate Holiday Gift Destination.</p>
+              <p class="para-2">Explore our curated selection and find the perfect gifts to <br>delight your loved ones this holiday season.</p>
+              </div>
+              <button class="shop-now-button">SHOP NOW <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <div class="second-banner"></div>
+        </div>
+
+        <!-- Sustainable Text -->
+        <div class="banner-data">
+          <p class="sustainable-text">SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL</p>
+          <p class="sustainable-text-mobile">SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR</p>
+        </div>
+      
+      </div> 
+    </div>
+
+    <!-- Second Frame -->
+    <div class="second-frame">
+        <div class="vison-header">
+            <p>Tisso vison in the wild</p>
+        </div>
+        <div class="image-set">
+          <img src="./assets-shopify/photo-1.png" alt="bag" class="photo"/>
+          <div class="plus-button-1"><button id="first-item" class="plus-button">+</button></div>
+          <img src="./assets-shopify/photo-2.png" alt="blue_tuxedo" class="photo"/>
+          <div class="plus-button-2"><button id="second-item" class="plus-button">+</button></div>
+          <img src="./assets-shopify/photo-3.png" alt="red_shirt" class="photo"/>
+          <div class="plus-button-3"><button id="third-item" class="plus-button">+</button></div>
+          <img src="./assets-shopify/photo-4.png" alt="leather_jacket" class="photo"/>
+          <div class="plus-button-4"><button id="fourth-item" class="plus-button">+</button></div>
+          <img src="./assets-shopify/photo-5.png" alt="varsity_jacket" class="photo"/>
+          <div class="plus-button-5"><button id="fifth-item" class="plus-button">+</button></div>
+          <img src="./assets-shopify/photo-6.png" alt="denim_jacket" class="photo"/>
+          <div class="plus-button-6"><button id="sixth-item" class="plus-button">+</button></div>
+        </div>
+    </div>
+    
+    
+<!-- Modal creation -->
+ 
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <!--Modal left section -->
+    <div class="product-details">
+    <div class="modal-left">
+      <img id="modal-img" src="" alt="product image">
+    </div>
+
+    <!-- Modal right section -->
+    <div class="modal-right">
+      <p id="modal-name">Product Name</p>
+      <p id="modal-price">980,00€</p>
+      <p id="modal-description">This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.</p>
+    </div>
+    </div>
+
+    <!-- Modal color selection -->
+    <div class="modal-color-options">
+      <label>Color</label>
+      <div id="modal-colors" class="color-options"></div>
+    </div>
+
+    <!-- Modal size selection -->
+    <div class="modal-size-options">
+      <label>Size</label>
+      <select id="modal-sizes" style="font-family: Jost;">
+        <option></option>
+      </select>
+    </div>
+
+    <!-- Add to cart button -->
+    <button class="add-to-cart" onclick="addToCart()">ADD TO CART <i class="fas fa-arrow-right"></i></button>
+  </div>
+
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Home",
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Custom Home"
+    }
+  ]
+}
+{% endschema %}
