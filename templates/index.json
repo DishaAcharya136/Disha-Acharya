@@ -72,8 +72,6 @@
     }
   },
   "order": [
-    "custom-home",
-    "image_banner",
-    "featured_collection"
+    "custom-home"
   ]
 }
