@@ -5,7 +5,7 @@ const closeBtn = document.querySelector(".close");
 // Product Data
 const Products = {
     first: {
-        img: "./assets/photo-1.png",
+        img: "{{ 'photo-1.png' | asset_url }}",
         productName: "Orange Wide Leg",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
@@ -14,7 +14,7 @@ const Products = {
     },
 
     second: {
-        img: "./assets/photo-2.png",
+        img: "{{ 'photo-2.png' | asset_url }}",
         productName: "Tailored Jacket",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
@@ -23,7 +23,7 @@ const Products = {
     },
 
     third: {
-        img: "./assets/photo-3.png",
+        img: "{{ 'photo-3.png' | asset_url }}",
         productName: "Accordion Pleated Dress",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
@@ -32,7 +32,7 @@ const Products = {
     },
     
     fourth: {
-        img: "./assets/photo-4.png",
+        img: "{{ 'photo-4.png' | asset_url }}",
         productName: "Green Trench Coat",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
@@ -41,7 +41,7 @@ const Products = {
     },
 
     fifth: {
-        img: "./assets/photo-5.png",
+        img: "{{ 'photo-5.png' | asset_url }}",
         productName: "Tennis Blue T-Shirt",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
@@ -50,7 +50,7 @@ const Products = {
     },
 
     sixth: {
-        img: "./assets/photo-6.png",
+        img: "{{ 'photo-6.png' | asset_url }}",
         productName: "Long Sleeve Tennis Top",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
