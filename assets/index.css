@@ -107,7 +107,7 @@
   background-size: contain;
   background-position: center center;
   background-size: cover;
-   display: block !important;
+  display: block !important;
 }
 
 .heading {
