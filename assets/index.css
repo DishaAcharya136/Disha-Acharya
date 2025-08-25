@@ -91,6 +91,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-size: cover;
+  display: block !important;
 }
 
 .banner-data {
