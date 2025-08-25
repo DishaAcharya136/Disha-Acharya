@@ -535,7 +535,7 @@ select option:first-child {
   }
 
   .first-banner {
-    display: none;
+    display: none !important;
   }
 
   .second-banner-section {
