@@ -2,11 +2,12 @@
 const modal = document.getElementById("product-modal");
 const closeBtn = document.querySelector(".close");
 
+
 // Product Data
 const Products = {
     first: {
         id: 1,
-        variantId: 98765432109876, 
+        variantId: '{{ all_products["orange-wide-leg"].variants.first.id }}',
         img: "{{ 'photo-1.png' | asset_url }}",
         productName: "Orange Wide Leg",
         price: "980,00€",
