@@ -183,16 +183,5 @@ function hamburgerMenu(){
     }
 }
 
-function loadCart() {
-  console.log("Cart page loaded!");
-  // Example: show number of items
-  document.getElementById("cart-count").innerText = window.cart.item_count;
-}
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.location.pathname === "/cart") {
-    loadCart();
-  }
-});
-
 
 

@@ -1330,3 +1330,14 @@ class CartPerformance {
     );
   }
 }
+
+
+function loadCart() {
+  if (window.location.pathname === "/cart") {
+    console.log("Cart page loaded!");
+    console.log("Cart items:",cart);
+    // Render items here...
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadCart);
