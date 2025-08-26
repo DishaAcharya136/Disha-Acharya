@@ -149,7 +149,15 @@ function addToCart() {
     fetch("/cart/add.js", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(cart)
+    body: JSON.stringify({
+      id: 1, // real variant ID
+      name: currentProduct.productName,
+        price: currentProduct.price,
+        color: selectedColorBtn.textContent,
+        size: sizeSelect.value,
+        img: currentProduct.img,
+      quantity: 1
+    })
   })
   .then(res => res.json())
   .then(data => {
@@ -179,26 +187,7 @@ function loadCart() {
   fetch("/cart.js")
     .then(res => res.json())
     .then(cart => {
-      const cartContainer = document.getElementById("cart-items");
-      const totalEl = document.getElementById("cart-total");
-
-      if (!cartContainer) return;
-
-      cartContainer.innerHTML = "";
-
-      cart.items.forEach(item => {
-        const div = document.createElement("div");
-        div.classList.add("cart-item");
-        div.innerHTML = `
-          <img src="${item.image}" width="80">
-          <p>${item.title}</p>
-          <p>Qty: ${item.quantity}</p>
-          <p>Price: ${item.line_price / 100} ${cart.currency}</p>
-        `;
-        cartContainer.appendChild(div);
-      });
-
-      totalEl.textContent = (cart.total_price / 100) + " " + cart.currency;
+      console.log("cartItems", cart);
     })
     .catch(err => console.error("Cart load error:", err));
 }
