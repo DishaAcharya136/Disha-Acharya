@@ -146,7 +146,8 @@ function addToCart() {
 
     cart.push(cartItem);
     console.log("Cart:", cart);
-    alert(`${cartItem.name} (${cartItem.color}, ${cartItem.size}) added to cart!`);
+    //alert(`${cartItem.name} (${cartItem.color}, ${cartItem.size}) added to cart!`);
+    window.location.href = "/cart"; 
 
     modal.style.display = "none"; 
 }
