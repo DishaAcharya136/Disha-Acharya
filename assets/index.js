@@ -145,10 +145,22 @@ function addToCart() {
     };
 
     cart.push(cartItem);
-    console.log("Cart:", cart);
-    sessionStorage.setItem("cart", cart);
+
+    fetch("/cart/add.js", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(cart)
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log("Added to cart:", data);
+    window.location.href = "/cart"; // Redirect to custom cart page
+  })
+  .catch(err => console.error("Cart error:", err));
+    //console.log("Cart:", cart);
+    //sessionStorage.setItem("cart", cart);
     //alert(`${cartItem.name} (${cartItem.color}, ${cartItem.size}) added to cart!`);
-    window.location.href = "/cart"; 
+   // window.location.href = "/cart"; 
 
     modal.style.display = "none"; 
 }
