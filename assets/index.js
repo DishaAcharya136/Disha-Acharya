@@ -5,6 +5,8 @@ const closeBtn = document.querySelector(".close");
 // Product Data
 const Products = {
     first: {
+        id: 1,
+        variantId: 987654321, 
         img: "{{ 'photo-1.png' | asset_url }}",
         productName: "Orange Wide Leg",
         price: "980,00€",
@@ -14,6 +16,8 @@ const Products = {
     },
 
     second: {
+        id:2,
+        variantId: 987654320, 
         img: "{{ 'photo-2.png' | asset_url }}",
         productName: "Tailored Jacket",
         price: "980,00€",
@@ -23,6 +27,8 @@ const Products = {
     },
 
     third: {
+        id:3,
+        variantId: 987654322, 
         img: "{{ 'photo-3.png' | asset_url }}",
         productName: "Accordion Pleated Dress",
         price: "980,00€",
@@ -32,6 +38,8 @@ const Products = {
     },
     
     fourth: {
+        id:4,
+        variantId: 987654329, 
         img: "{{ 'photo-4.png' | asset_url }}",
         productName: "Green Trench Coat",
         price: "980,00€",
@@ -41,6 +49,8 @@ const Products = {
     },
 
     fifth: {
+        id:5,
+        variantId: 987654327, 
         img: "{{ 'photo-5.png' | asset_url }}",
         productName: "Tennis Blue T-Shirt",
         price: "980,00€",
@@ -50,6 +60,8 @@ const Products = {
     },
 
     sixth: {
+        id:6,
+        variantId: 987654324, 
         img: "{{ 'photo-6.png' | asset_url }}",
         productName: "Long Sleeve Tennis Top",
         price: "980,00€",
@@ -150,12 +162,7 @@ function addToCart() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      id: 1, // real variant ID
-      name: currentProduct.productName,
-        price: currentProduct.price,
-        color: selectedColorBtn.textContent,
-        size: sizeSelect.value,
-        img: currentProduct.img,
+      id: currentProduct.variantId,
       quantity: 1
     })
   })
