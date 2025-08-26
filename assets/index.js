@@ -6,7 +6,7 @@ const closeBtn = document.querySelector(".close");
 const Products = {
     first: {
         id: 1,
-        variantId: 98765432109876, 
+        variantId: 8344522096836, 
         img: "{{ 'photo-1.png' | asset_url }}",
         productName: "Orange Wide Leg",
         price: "980,00€",
