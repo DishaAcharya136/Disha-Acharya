@@ -146,6 +146,7 @@ function addToCart() {
 
     cart.push(cartItem);
     console.log("Cart:", cart);
+    sessionStorage.setItem("cart", cart);
     //alert(`${cartItem.name} (${cartItem.color}, ${cartItem.size}) added to cart!`);
     window.location.href = "/cart"; 
 
@@ -166,4 +167,10 @@ function hamburgerMenu(){
         hburger.classList.add("active");
     }
 }
+
+function loadCart() {
+    console.log("load cart", sessionStorage.getItem("cart"));
+}
+
+document.addEventListener("DOMContentLoaded", loadCart);
 
