@@ -171,7 +171,7 @@ function addToCart() {
     console.log("Added to cart:", data);
     sessionStorage.setItem("cartItems", cart);
     //document.dispatchEvent(new CustomEvent('cart:refresh', { detail: { source: 'custom-add' } }));
-    window.location.href = "/cart"; // Redirect to custom cart page
+    //window.location.href = "/cart"; // Redirect to custom cart page
   })
   .catch(err => console.error("Cart error:", err));
     modal.style.display = "none"; 
