@@ -2,14 +2,13 @@
 const modal = document.getElementById("product-modal");
 const closeBtn = document.querySelector(".close");
 
-
 // Product Data
 const Products = {
     first: {
         id: 1,
-        variantId: '{{ all_products["orange-wide-leg"].variants.first.id }}',
+        variantId: 98765432109876, 
         img: "{{ 'photo-1.png' | asset_url }}",
-        productName: '{{ all_products["orange-wide-leg"].title }}',
+        productName: "Orange Wide Leg",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["White","Black"],
@@ -158,6 +157,12 @@ function addToCart() {
     };
 
     cart.push(cartItem);
+
+    fetch('/products/orange-wide-leg.js')
+  .then(res => res.json())
+  .then(product => {
+    console.log(product.variants); // all variant objects
+  });
 
     fetch("/cart/add.js", {
     method: "POST",
