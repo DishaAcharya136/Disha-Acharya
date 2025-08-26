@@ -323,6 +323,12 @@
       "giftText": "Find the ideal gift for your loved ones.",
       "giftBtn": "Choose Gift"
     },
+    "banner": {
+      "giftGuide": "The Gift Guide",
+      "para1": "Discover Joy: Your Ultimate Holiday Gift Destination.",
+      "para2": "Explore our curated selection and find the perfect gifts to <br>delight your loved ones this holiday season.",
+      "shopNowBtn": "SHOP NOW"
+    },
     "featured_blog": {
       "view_all": "View all",
       "onboarding_title": "Blog post",
