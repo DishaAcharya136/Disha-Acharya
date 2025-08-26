@@ -157,11 +157,6 @@ function addToCart() {
     window.location.href = "/cart"; // Redirect to custom cart page
   })
   .catch(err => console.error("Cart error:", err));
-    //console.log("Cart:", cart);
-    //sessionStorage.setItem("cart", cart);
-    //alert(`${cartItem.name} (${cartItem.color}, ${cartItem.size}) added to cart!`);
-   // window.location.href = "/cart"; 
-
     modal.style.display = "none"; 
 }
 
@@ -181,7 +176,31 @@ function hamburgerMenu(){
 }
 
 function loadCart() {
-    console.log("load cart", sessionStorage.getItem("cart"));
+  fetch("/cart.js")
+    .then(res => res.json())
+    .then(cart => {
+      const cartContainer = document.getElementById("cart-items");
+      const totalEl = document.getElementById("cart-total");
+
+      if (!cartContainer) return;
+
+      cartContainer.innerHTML = "";
+
+      cart.items.forEach(item => {
+        const div = document.createElement("div");
+        div.classList.add("cart-item");
+        div.innerHTML = `
+          <img src="${item.image}" width="80">
+          <p>${item.title}</p>
+          <p>Qty: ${item.quantity}</p>
+          <p>Price: ${item.line_price / 100} ${cart.currency}</p>
+        `;
+        cartContainer.appendChild(div);
+      });
+
+      totalEl.textContent = (cart.total_price / 100) + " " + cart.currency;
+    })
+    .catch(err => console.error("Cart load error:", err));
 }
 
 document.addEventListener("DOMContentLoaded", loadCart);
