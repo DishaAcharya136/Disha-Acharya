@@ -1331,12 +1331,14 @@ class CartPerformance {
   }
 }
 
-
 function loadCart() {
   if (window.location.pathname === "/cart") {
-    console.log("Cart page loaded!");
-    console.log("Cart items:",cart);
-    // Render items here...
+  fetch("/cart.js")
+    .then(res => res.json())
+    .then(cart => {
+      console.log("Cart Disha", cart)
+    })
+    .catch(err => console.error("Cart load error:", err));
   }
 }
 
