@@ -184,13 +184,15 @@ function hamburgerMenu(){
 }
 
 function loadCart() {
-  fetch("/cart.js")
-    .then(res => res.json())
-    .then(cart => {
-      console.log("cartItems", cart);
-    })
-    .catch(err => console.error("Cart load error:", err));
+  console.log("Cart page loaded!");
+  // Example: show number of items
+  document.getElementById("cart-count").innerText = window.cart.item_count;
 }
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.location.pathname === "/cart") {
+    loadCart();
+  }
+});
 
-document.addEventListener("DOMContentLoaded", loadCart);
+
 
