@@ -146,7 +146,7 @@ function addToCart() {
 
     cart.push(cartItem);
 
-    fetch("/cart/cart.js", {
+    fetch("/cart/add.js", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

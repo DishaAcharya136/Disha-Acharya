@@ -1333,7 +1333,7 @@ class CartPerformance {
 
 function loadCart() {
   if (window.location.pathname === "/cart") {
-  fetch("/cart.js")
+  fetch("/cart/add.js")
     .then(res => res.json())
     .then(cart => {
       console.log("Cart Disha", cart)
