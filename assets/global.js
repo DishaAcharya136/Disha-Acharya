@@ -1333,7 +1333,7 @@ class CartPerformance {
 
 function loadCart() {
   if (window.location.pathname === "/cart") {
-  fetch("/cart.js", {
+  fetch("/cart/add.js", {
     method: "GET",
     headers: {
       "Content-Type": "application/json"
