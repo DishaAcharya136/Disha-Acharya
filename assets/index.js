@@ -9,7 +9,7 @@ const Products = {
         id: 1,
         variantId: '{{ all_products["orange-wide-leg"].variants.first.id }}',
         img: "{{ 'photo-1.png' | asset_url }}",
-        productName: "Orange Wide Leg",
+        productName: '{{ all_products["orange-wide-leg"].title }}',
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["White","Black"],
