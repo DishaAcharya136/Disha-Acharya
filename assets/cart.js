@@ -292,3 +292,21 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+function loadCart() {
+  if (window.location.pathname === "/cart") {
+  fetch("/cart.js", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+    .then(res => res.json())
+    .then(cart => {
+      console.log("cart", cart);
+    })
+    .catch(err => console.error("Cart load error:", err));
+  }
+}
+
+document.addEventListener("DOMContentLoaded", loadCart);
