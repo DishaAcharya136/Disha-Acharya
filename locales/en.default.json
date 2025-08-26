@@ -318,6 +318,11 @@
     "footer": {
       "payment": "Payment methods"
     },
+    "navbar":{
+      "logoText": "TISSO VISON",
+      "giftText": "Find the ideal gift for your loved ones.",
+      "giftBtn": "Choose Gift"
+    },
     "featured_blog": {
       "view_all": "View all",
       "onboarding_title": "Blog post",
