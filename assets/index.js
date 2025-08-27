@@ -37,7 +37,21 @@ const Products = {
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["Blue","Black"],
-        sizes: ["XS", "S", "M", "L", "XL"]
+        sizes: ["XS", "S", "M", "L", "XL"],
+        Blue: {
+            'XS': 45131814502596,
+            'S': 45131814535364,
+            'M': 45131814568132,
+            'L': 45131814600900,
+            'XL': 45131814633668
+        },
+        Black: {
+            'XS': 45131814666436,
+            'S': 45131814699204,
+            'M': 45131814731972,
+            'L': 45131814764740,
+            'XL': 45131814797508
+        }
     },
 
     third: {
@@ -48,7 +62,21 @@ const Products = {
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["Red","Grey"],
-        sizes: ["XS", "S", "M", "L", "XL"]
+        sizes: ["XS", "S", "M", "L", "XL"],
+        red: {
+            'XS': 45131817681092,
+            'S': 45131817713860,
+            'M': 45131817746628,
+            'L': 45131817779396,
+            'XL': 45131817812164
+        },
+        grey: {
+            'XS': 45131817517252,
+            'S': 45131817550020,
+            'M': 45131817582788,
+            'L': 45131817615556,
+            'XL': 45131817648324
+        }
     },
     
     fourth: {
@@ -59,7 +87,21 @@ const Products = {
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["White","Black"],
-        sizes: ["XS", "S", "M", "L", "XL"]
+        sizes: ["XS", "S", "M", "L", "XL"],
+        white: {
+            'XS': 45131825021124,
+            'S': 45131825053892,
+            'M': 45131825086660,
+            'L': 45131825119428,
+            'XL': 45131825152196
+        },
+        black: {
+            'XS': 45131825184964,
+            'S': 45131825217732,
+            'M': 45131825250500,
+            'L': 45131825283268,
+            'XL': 45131825316036
+        }
     },
 
     fifth: {
@@ -70,7 +112,21 @@ const Products = {
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["Grey","Black"],
-        sizes: ["XS", "S", "M", "L", "XL"]
+        sizes: ["XS", "S", "M", "L", "XL"],
+        grey: {
+            'XS': 45131827314884,
+            'S': 45131827347652,
+            'M': 45131827380420,
+            'L': 45131827413188,
+            'XL': 45131827445956
+        },
+        black: {
+            'XS': 45131827478724,
+            'S': 45131827511492,
+            'M': 45131827544260,
+            'L': 45131827577028,
+            'XL': 45131827609796
+        }
     },
 
     sixth: {
@@ -81,7 +137,21 @@ const Products = {
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["Blue","Black"],
-        sizes: ["XS", "S", "M", "L", "XL"]
+        sizes: ["XS", "S", "M", "L", "XL"],
+        blue: {
+            'XS': 45131830067396,
+            'S': 45131832033476,
+            'M': 45131832066244,
+            'L': 45131832099012,
+            'XL': 45131832131780
+        },
+        black: {
+            'XS': 45131830100164,
+            'S': 45131832164548,
+            'M': 45131832197316,
+            'L': 45131832230084,
+            'XL': 45131832262852
+        }
     },
 }
 
