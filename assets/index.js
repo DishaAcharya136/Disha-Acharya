@@ -181,7 +181,7 @@ function addToCart() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      id: currentProduct.variantId,
+      id:  currentProduct[cartItem.color.toLowerCase()][cartItem.size],
       quantity: 1
     })
   })
