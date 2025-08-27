@@ -31,21 +31,21 @@ const Products = {
 
     second: {
         id: 8347975975108,
-        variantId: 45131814666436, 
+        variantId: 45131814502596, 
         img: "{{ 'photo-2.png' | asset_url }}",
         productName: "Tailored Jacket",
         price: "980,00€",
         description: "This one-piece swimsuit is crafted from jersey featuring an allover micro Monogram motif in relief.",
         colors: ["Blue","Black"],
         sizes: ["XS", "S", "M", "L", "XL"],
-        Blue: {
+        blue: {
             'XS': 45131814502596,
             'S': 45131814535364,
             'M': 45131814568132,
             'L': 45131814600900,
             'XL': 45131814633668
         },
-        Black: {
+        black: {
             'XS': 45131814666436,
             'S': 45131814699204,
             'M': 45131814731972,
