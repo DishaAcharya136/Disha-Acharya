@@ -16,8 +16,8 @@ const Products = {
     },
 
     second: {
-        id:2,
-        variantId: 987654320, 
+        id: 8347975975108,
+        variantId: 45131814666436, 
         img: "{{ 'photo-2.png' | asset_url }}",
         productName: "Tailored Jacket",
         price: "980,00€",
@@ -27,8 +27,8 @@ const Products = {
     },
 
     third: {
-        id:3,
-        variantId: 987654322, 
+        id: 8347976925380,
+        variantId: 45131817517252, 
         img: "{{ 'photo-3.png' | asset_url }}",
         productName: "Accordion Pleated Dress",
         price: "980,00€",
@@ -38,8 +38,8 @@ const Products = {
     },
     
     fourth: {
-        id:4,
-        variantId: 987654329, 
+        id: 8347978989764,
+        variantId: 45131825184964, 
         img: "{{ 'photo-4.png' | asset_url }}",
         productName: "Green Trench Coat",
         price: "980,00€",
@@ -49,8 +49,8 @@ const Products = {
     },
 
     fifth: {
-        id:5,
-        variantId: 987654327, 
+        id: 8347979284676,
+        variantId: 45131827478724, 
         img: "{{ 'photo-5.png' | asset_url }}",
         productName: "Tennis Blue T-Shirt",
         price: "980,00€",
@@ -60,8 +60,8 @@ const Products = {
     },
 
     sixth: {
-        id:6,
-        variantId: 987654324, 
+        id: 8347980234948,
+        variantId: 45131830067396, 
         img: "{{ 'photo-6.png' | asset_url }}",
         productName: "Long Sleeve Tennis Top",
         price: "980,00€",
