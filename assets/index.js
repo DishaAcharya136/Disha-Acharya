@@ -172,7 +172,10 @@ function addToCart() {
 
     cart.push(cartItem);
 
-    console.log("variantId", currentProduct[cartItem.color][cartItem.size]);
+    //console.log("variantId", currentProduct[cartItem.color][cartItem.size]);
+    console.log("current Product", currentProduct);
+    console.log("color", cartItem.color);
+    console.log("size", cartItem.size);
     fetch("/cart/add.js", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
